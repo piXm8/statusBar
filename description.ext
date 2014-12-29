@@ -1,0 +1,5 @@
+class RscTitles
+{
+	
+	#include "dialog\statusBar.hpp"
+};
