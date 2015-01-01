@@ -39,6 +39,6 @@ systemChat format["statusBar Loading player info...", _rscLayer];
 		case 0: {_minutes = "00"};
 	};
 		
-		((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format["FPS: %1 | DAMAGE: %2 | KRYPTO: %3 | HUNGER: %4 | THIRST: %5 | SOILED: %6 | GRIDREF: %7 | RESTART IN: %8:%9", round diag_fps, damage player, EPOCH_playerCrypto, EPOCH_playerHunger, EPOCH_playerThirst, EPOCH_playerSoiled, mapGridPosition player, _hours, _minutes, _counter];
+		((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format["FPS: %1 | PLAYERS: %2 | DAMAGE: %3 | KRYPTO: %4 | HUNGER: %5 | THIRST: %6 | GRIDREF: %7 | RESTART IN: %8:%9", round diag_fps, count playableUnits, damage player, EPOCH_playerCrypto, EPOCH_playerHunger, EPOCH_playerThirst, mapGridPosition player, _hours, _minutes, _counter];
 	}; 
 };
